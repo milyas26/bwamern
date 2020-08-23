@@ -79,5 +79,6 @@ Button.prototype = {
   isLarge: propTypes.bool,
   isBlock: propTypes.bool,
   isExternal: propTypes.bool,
-  hasShadow: propTypes.bool
+  hasShadow: propTypes.bool,
+  isPrimary: propTypes.bool
 }
