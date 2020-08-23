@@ -30,7 +30,7 @@ export default function Button(props) {
     )
   }
 
-  if (props.type === 'Link') {
+  if (props.type === 'link') {
     if (props.isExternal) {
       return (
         <a
@@ -38,7 +38,7 @@ export default function Button(props) {
           className={className.join(' ')}
           style={props.style}
           target={props.target === '_blank' ? '_blank' : undefined}
-          ref={props.target === '_blank' ? 'noopener noreferer' : undefined}
+          ref={props.target === '_blank' ? 'noopener noreferrer' : undefined}
         >
           {props.children}
         </a>
@@ -64,7 +64,7 @@ export default function Button(props) {
     >
       {props.children}
     </button>
-  )
+  );
 }
 
 Button.prototype = {
