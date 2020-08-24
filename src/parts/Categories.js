@@ -20,7 +20,7 @@ export default function Categories({ data }) {
                   className="item column-3 row1"
                   key={`category-${index1}-item-${index2}`}
                 >
-                  <div className="card">
+                  <div className="card ">
                     {item.isPopular && (
                       <div className="tag">
                         Popular{' '}
@@ -42,6 +42,7 @@ export default function Categories({ data }) {
                         type="link"
                         href={`/properties/${item._id}`}
                         className="stretched-link d-block text-gray-800"
+                        style={{ textDecoration: "none"}}
                       >
                         <h5 className="">{item.name}</h5>
                       </Button>

@@ -175,10 +175,10 @@
   "testimonial": {
     "_id": "asd1293uasdads1",
     "imageUrl": "/images/testimonial-landingpages.png",
-    "name": "Happy Family",
+    "name": "Happy Holiday",
     "rate": 4.55,
-    "content": "What a great trip with my family and I should try again next time soon ...",
-    "familyName": "Angga",
+    "content": "What a great trip for me and i should try again and again next time soon...",
+    "familyName": "Jonas",
     "familyOccupation": "Product Designer"
   }
 }
