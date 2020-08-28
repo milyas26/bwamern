@@ -8,7 +8,7 @@ export default class Example extends Component {
     const breadcrumb = [
       { pageTitle: "Home", pageHref:"" },
       { pageTitle: "House Details", pageHref:"" }
-  ];
+    ];
 
     return (
       <div className="container">
