@@ -5,11 +5,10 @@ import "./index.scss";
 
 export default function Breadcrumb(props) {
   const className = [props.className];
-  if (props.isBreadcrumb) className.push('breadcrumb');
   
   return (
     <div aria-label="breadcrumb">
-      <ol className={className.join(" ")}>
+      <ol className={["breadcrumb", className].join(" ")}>
         {props.data.map((item, index) => {
           return (
             <li

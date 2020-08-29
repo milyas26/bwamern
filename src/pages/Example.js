@@ -17,7 +17,7 @@ export default class Example extends Component {
           style={{ height: '100vh' }}
         >
           <div className="col-auto">
-          <Breadcrumb isBreadcrumb data={breadcrumb} />
+          <Breadcrumb data={breadcrumb} />
           </div>
         </div>
       </div>

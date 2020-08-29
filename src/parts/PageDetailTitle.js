@@ -8,7 +8,7 @@ export default function PageDetailTitle({data, breadcrumb}) {
             <Fade bottom>
                 <div className="row align-items-center">
                     <div className="col">
-                        <Breadcrumb isBreadcrumb data={breadcrumb}/>
+                        <Breadcrumb data={breadcrumb}/>
                     </div>
                     <div className="col-auto text-center" >
                         <h1 className="h2">{data.name}</h1>
