@@ -4,16 +4,15 @@ import Fade from 'react-reveal/Fade'
 import './index.scss'
 
 
-export default function Numbering({style, classNane, data, current}) {
-
-    const KeyOfData = Object.key(data);
+export default function Numbering({style, className, data, current}) {
+    const KeysOfData = Object.keys(data);
 
     return (
         <Fade>
             <ol className={["stepper", className].join(" ")} style={style}>
-                {KeyOfData.map((list, index) => {
+                {KeysOfData.map((list, index) => {
                     let isActive = list === current ? "active" : "";
-                    if ( index + 1 === KeyOfData.length) {
+                    if ( index + 1 === KeysOfData.length) {
                         isActive ="";
                         return null;
                     }
