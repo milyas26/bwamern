@@ -47,10 +47,10 @@ export default function Hero(props) {
                   width="36"
                   height="36"
                   src="images/icons/ic_traveller.svg"
-                  alt={`${props.data.travellers} Travellers`}
+                  alt={`${props.data.travelers} Travellers`}
                 />
                 <h6 className="mt-3">
-                  {numberFormat(props.data.travellers)}{' '}
+                  {numberFormat(props.data.travelers)}{' '}
                   <span className="text-gray-500 font-weight-light">
                     Travellers
                   </span>
@@ -80,7 +80,7 @@ export default function Hero(props) {
                   alt={`${props.data.treasures} Treasures`}
                 />
                 <h6 className="mt-3">
-                  {numberFormat(props.data.travellers)}{' '}
+                  {numberFormat(props.data.treasures)}{' '}
                   <span className="text-gray-500 font-weight-light">
                     Treasures
                   </span>
