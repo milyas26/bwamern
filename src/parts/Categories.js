@@ -42,7 +42,7 @@ export default function Categories({ data }) {
                             className="stretched-link d-block text-gray-800"
                             style={{ textDecoration: 'none' }}
                           >
-                            <h5 className="">{item.name}</h5>
+                            <h5 className="">{item.title}</h5>
                           </Button>
                           <span className="text-gray-500">
                             {item.city}, {item.country}
