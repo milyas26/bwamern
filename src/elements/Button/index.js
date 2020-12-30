@@ -64,7 +64,7 @@ export default function Button(props) {
     >
       {props.children}
     </button>
-  );
+  )
 }
 
 Button.prototype = {
@@ -80,5 +80,5 @@ Button.prototype = {
   isBlock: propTypes.bool,
   isExternal: propTypes.bool,
   hasShadow: propTypes.bool,
-  isPrimary: propTypes.bool
+  isPrimary: propTypes.bool,
 }

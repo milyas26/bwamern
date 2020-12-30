@@ -47,7 +47,7 @@ class BookingForm extends Component {
     if (prevState.data.duration !== data.duration) {
       const startDate = new Date(data.date.startDate)
       const endDate = new Date(
-        startDate.setDate(startDate.getDate() + +data.duration - 1)
+        startDate.setDate(startDate.getDate() + +data.duration - 1),
       )
 
       this.setState({
@@ -64,22 +64,22 @@ class BookingForm extends Component {
   }
 
   startBooking = () => {
-    const {data} = this.state;
+    const { data } = this.state
     this.props.startBooking({
       _id: this.props.itemDetails._id,
       duration: data.duration,
       date: {
         startDate: data.date.startDate,
-        endDate: data.date.endDate
-      }
+        endDate: data.date.endDate,
+      },
     })
 
-    this.props.history.push("/checkout")
+    this.props.history.push('/checkout')
   }
 
   render() {
-    const { data } = this.state;
-    const { itemDetails } = this.props;
+    const { data } = this.state
+    const { itemDetails } = this.props
     return (
       <div className="card bordered" style={{ padding: '60px 80px' }}>
         <h4 className="mb-3">Start Booking</h4>
@@ -103,24 +103,28 @@ class BookingForm extends Component {
         <label htmlFor="date">Pick a date</label>
         <InputDate onChange={this.updateData} name="date" value={data.date} />
 
-        <h6 className="text-gray-500 font-weight-light" style={{marginBottom: 40}}>
-            You will pay{" "}
-            <span className="text-gray-900">
-                ${itemDetails.price * data.duration} USD
-            </span> {" "}
-            per{" "}
-            <span className="text-gray-900" >
-                {data.duration} {itemDetails.unit}
-            </span>
+        <h6
+          className="text-gray-500 font-weight-light"
+          style={{ marginBottom: 40 }}
+        >
+          You will pay{' '}
+          <span className="text-gray-900">
+            ${itemDetails.price * data.duration} USD
+          </span>{' '}
+          per{' '}
+          <span className="text-gray-900">
+            {data.duration} {itemDetails.unit}
+          </span>
         </h6>
 
-        <Button 
-          className="btn" 
-          hasShadow 
-          isPrimary 
-          isBlock 
-          onClick={this.startBooking}>
-            Continue to Book
+        <Button
+          className="btn"
+          hasShadow
+          isPrimary
+          isBlock
+          onClick={this.startBooking}
+        >
+          Continue to Book
         </Button>
       </div>
     )
@@ -131,6 +135,5 @@ BookingForm.propTypes = {
   itemDetails: propTypes.object,
   startBooking: propTypes.func,
 }
-
 
 export default withRouter(BookingForm)
